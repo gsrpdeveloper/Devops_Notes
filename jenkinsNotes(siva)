@@ -88,4 +88,109 @@ Steps:-
   14 ls
   15 ./startup.sh
 
+					Creating JOB
+					============
+1) create job
+2) select free style project and give any name click on "ok" and select execute shell "save" ex:-proj_1
+3) back to dashboard 
+installing required plugins:-
+=============================
+
+Installing Plugins/Upgrades:-
+=============================
+
+Preparation
+-----------
+
+Checking internet connectivity
+Checking update center connectivity
+Success
+
+1) Trilead API	 Success
+2) Folders	 Success
+3) Oracle Java SE Development Kit Installer	 Success
+4) Script Security	 Success
+5) Command Agent Launcher	 Success
+6) OWASP Markup Formatter	 Success
+7) Structs	 Success
+8) Pipeline: Step API	 Success
+9) Token Macro	 Success
+10) bouncycastle API	 Success
+11) Build Timeout	 Success
+12) Credentials	 Success
+13) Plain Credentials	 Success
+14) SSH Credentials	 Success
+15) Credentials Binding	 Success
+16) SCM API	 Success
+17) Pipeline: API	 Success
+Timestamper	 Success
+Pipeline: Supporting APIs	 Success
+Durable Task	 Success
+Pipeline: Nodes and Processes	 Success
+JUnit	 Success
+Matrix Project	 Success
+Resource Disposer	 Success
+Workspace Cleanup	 Success
+Ant	 Success
+JavaScript GUI Lib: ACE Editor bundle	 Success
+JavaScript GUI Lib: jQuery bundles (jQuery and jQuery UI)	 Success
+Pipeline: SCM Step	 Success
+Pipeline: Groovy	 Success
+Pipeline: Job	 Success
+Apache HttpComponents Client 4.x API	 Success
+Display URL API	 Success
+Mailer	 Success
+Pipeline: Basic Steps	 Success
+Gradle	 Success
+Pipeline: Milestone Step	 Success
+Jackson 2 API	 Success
+Pipeline: Input Step	 Success
+Pipeline: Stage Step	 Success
+Pipeline Graph Analysis	 Success
+Pipeline: REST API	 Success
+JavaScript GUI Lib: Handlebars bundle	 Success
+JavaScript GUI Lib: Moment.js bundle	 Success
+Pipeline: Stage View	 Success
+Pipeline: Build Step	 Success
+Pipeline: Model API	 Success
+Pipeline: Declarative Extension Points API	 Success
+JSch dependency	 Success
+Git client	 Success
+GIT server	 Success
+Pipeline: Shared Groovy Libraries	 Success
+Branch API	 Success
+Pipeline: Multibranch	 Success
+Authentication Tokens API	 Success
+Docker Commons	 Success
+Docker Pipeline	 Success
+Pipeline: Stage Tags Metadata	 Success
+Pipeline: Declarative Agent API	 Success
+Pipeline: Declarative	 Success
+Lockable Resources	 Success
+Pipeline	 Success
+GitHub API	 Success
+Git	 Success
+GitHub	 Success
+GitHub Branch Source	 Success
+Pipeline: GitHub Groovy Libraries	 Success
+Pipeline: Stage View	 Success
+Git	 Success
+MapDB API	 Success
+Subversion	 Success
+SSH Slaves	 Success
+Matrix Authorization Strategy	 Success
+PAM Authentication	 Success
+LDAP	 Success
+Email Extension	 Success
+Mailer	 Success
+Loading plugin extensions	 Success
+GitHub Authentication	 Success
+SonarQube Scanner	 Success
+Icon Shim	 Success
+GitHub Integration	 Success
+JIRA	 Success
+Email Extension Template	 Success
+Loading plugin extensions	 Success
+JaCoCo	 Success
+Loading plugin extensions	 Success
 
