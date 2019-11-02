@@ -193,4 +193,21 @@ Email Extension Template	 Success
 Loading plugin extensions	 Success
 JaCoCo	 Success
 Loading plugin extensions	 Success
+jira issuesupdater	 Success
+Role-based Authorization Strategy	 Success
+build pipeline	 Success
 
+note:- after doing chnages http://localhost:8080/restart
+
+							configurations:-
+							================
+--> manage jenkins --> Global tool configuration 		this is to config plugins
+1) Add git
+	name - git_1
+	Path to Git executable	:- C:\Program Files\Git\bin\git.exe
+to configure sonarqube:-
+========================
+
+
+https://binaries.sonarsource.com/Distribution/sonarqube/sonarqube-6.2.zip
+https://github.com/scmgalaxy/jacoco-maven-unittestv2.git
