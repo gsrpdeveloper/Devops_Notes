@@ -1,0 +1,91 @@
+						Jenkins tutorial  Devops school
+						===============================
+1) what and why Devops
+
+	devops is developing and operations
+	not a tool
+	not a team
+	its a culture
+	automation
+	sharing
+
+what is jenkins
+jenkins is a CI tool
+
+architect: design the whole work flow
+
+development(DEV)
+
+	1) source code management(scm)			:- git /svn /
+	2) build management
+							:- windows
+							:- linux
+	3) unit testing					:- testing for unit testing
+	4) packaging
+	5) repository management				:- nexus, artifactory etc
+	6) deelopment					:- ansible,chef,puppet
+	7) testing
+	8) code coverage
+
+Releases:-
+
+	a brief historey
+	basic architecture
+
+
+key points
+--> jenkins is a ci tool
+--> plugins i a heart of jenkins
+
+
+	1) A brief history
+	2) basic archetecture
+	3) installation & setup
+	4) integration and plugins
+	5) Global tool config
+	6) Global jenkis config
+	7) creratin of job & concept of queue
+	8) Roll based access strategy
+	9) notification
+
+what is job..?
+--> job is a template of flow
+rules:-
+		1)at a time only one job can run only for executers
+	
+  
+                                          Lab(tutor)
+                                          ==========
+Hack.chat--> click on this link
+https://hack.chat/?abhijit                  :-connected in the same line chat with
+
+Installation:-
+=============
+
+http://www.scmgalaxy.com/tutorials/complete-guide-of-java-installation-in-linux/          :- follow this link to install jdk in linux
+https://www.devopsschool.com/tutorial/jenkins/jenkins-installation-and-configuration.html :- follow this link to install jenkins in linux
+
+jenkins config file ( to change port ) /etc/sysconfig/jenkins     :- follow this to change port number
+
+Windows installation- but prefer in Linux
+=========================================
+steps 1:- follow above 3 stepps 
+
+installation using TOMCAT-jenkins:-
+====================================
+Steps:-
+
+  cd /opt
+  5 wget http://mirrors.estointernet.in/apache/tomcat/tomcat-9/v9.0.27/bin/apache-tomcat-9.0.27.tar.gz
+  6 ls
+  7 tar -xvf apache-tomcat-9.0.27.tar.gz
+  8 ls
+  9 cd apache-tomcat-9.0.27
+  10 cd webapps/
+  11 ls
+  12 wget http://mirrors.jenkins.io/war-stable/latest/jenkins.war
+  13 cd …/bin
+  14 ls
+  15 ./startup.sh
+
+
