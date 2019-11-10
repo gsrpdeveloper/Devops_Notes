@@ -1,0 +1,260 @@
+DOCKER
+===========================
+What is Docker?
+    Container mgmt tool
+    Free
+    Open Source
+    Version
+        Community
+        Enterprise
+    By Docker
+    Written in Go
+--------------------
+    How you run APP?
+        20 YEARS In PAST- PHYSCIAL SERVER
+        NOW - VMs
+        NOW ONWARDS
+------------
+WHY VM?
+    Reducing a Cost
+    Avoid a Wasteage
+    Speed of running app.
+--------------------------
+10 APP -------> 10 PS
+----------------------------
+10 APP -------> 10 VMs
+    WHY?
+===================================
+What is container?
+    Container is USER SPACE (USER NS)
+                With their own
+                - MOUNT (MNT NS) -----------------> FROM IMAGE
+                - Network (NET NS)
+                - Process Map (PMAP ns)
+    with a help of DOCKER.
+
+Container is a light weight package containing app.
+========================================
+Architecure of Docker
+---------------------
+
+Humen -> Docker Client --API ---> Docker Daemon --> Kernal 
+        ------------Docker Engine---------------
+
+
+
+Docker Components?
+--- Docker Engine
+--- Docker Image
+            OS LIB + Dependent Soft + Apps
+--- Registry (https://hub.docker.com/)
+        - repository
+
+--- Container
+    From Image you create container 
+    One Image can create millions of container in one second.
+
+    How to install Docker?
+    https://www.devopsschool.com/tutorial/docker/install-config/docker-install-commuityedition-centos-rhel.html
+
+[root@ip-172-31-16-168 ec2-user]# history
+    1  sudo yum install -y yum-utils device-mapper-persistent-data lvm2
+    2  sudo yum-config-manager --add-repo https://download.docker.com/linux/centos/docker-ce.repo
+    3  sudo yum install –y https://dl.fedoraproject.org/pub/epel/epel-release-latest-7.noarch.rpm
+    4  sudo yum-config-manager --enable rhui-REGION-rhel-server-extras
+    5  sudo yum install -y docker-ce
+    6  sudo yum install -y docker-ce
+    7  docker -v
+    8  sudo systemctl enable docker
+    9  sudo systemctl start docker
+   10  docker info
+   11  history
+
+15.206.81.84 - Rajesh
+13.235.248.167 - Asha
+15.206.100.150 - Karthik
+13.235.27.4 - Monish
+13.127.159.143 - Saujanya
+13.233.238.254 - Nagesh
+35.154.126.8  - Ravi
+13.233.134.69 - Shiva
+
+User name -ec2-user 
+
+Docker needs root
+username should be a part of group called "docker"
+
+
+[root@ip-172-31-16-168 ec2-user]# which docker
+/bin/docker
+[root@ip-172-31-16-168 ec2-user]# ps -eaf | grep docker
+root     10786     1  0 08:03 ?        00:00:00 /usr/bin/dockerd -H fd:// --containerd=/run/containerd/containerd.sock
+root     10963  9692  0 08:04 pts/0    00:00:00 grep --color=auto docker
+[root@ip-172-31-16-168 ec2-user]#
+
+
+WHAT APP YOU WANT TO RUN?
+nginx
+tomcat
+apache
+php
+wl
+-------------------
+jenkins
+    --- Dev on javas
+    --- JRE
+    ----WEB -   NODE
+        8080    50000
+https://hub.docker.com/_/jenkins
+
+Workflow of Docker 
+===========================
+Pull -> Create -> Start -> Stop -> Restart -> Pause -> Unpause  -> Stop - >Delete
+-----------------------
+        RUN
+
+ 10  docker info
+   11  history
+   12  clear
+   13  which docker
+   14  ps -eaf | grep docker
+   15  clear
+   16  docker pull jenkins
+   17  docker images
+   18  docker ps
+   19  docker ps -a
+   20  docker create jenkins
+   21  docker ps -a
+   22  docker ps
+   23  docker ps -a
+   24  clear
+   25  docker ps -a
+   26  docker start eacca655ebfb
+   27  docker ps -a
+   28  docker ps -a
+   29  docker stop eacca655ebfb
+   30  docker ps -a
+   31  docker restop eacca655ebfb
+   32  docker restart eacca655ebfb
+   33  docker ps -a
+   34  docker pause eacca655ebfb
+   35  docker ps -a
+   36  docker unpause eacca655ebfb
+   37  docker ps -a
+   38  clear
+   39  docker stop eacca655ebfb
+   40  docker ps -a
+   41  docker rm eacca655ebfb
+   42  docker ps -a
+   43  history
+
+Working with container?
+
+    Container is USER SPACE (USER NS)
+                With their own
+                - MOUNT (MNT NS) -----------------> FROM IMAGE
+                - Network (NET NS)
+                - Process Map (PMAP ns)
+    with a help of DOCKER.
+
+How to go inside a container?
+- exec - Docker exec will execute a executables inside a container if EXist
+            with -it and shell - you can go inside a container
+- attach
+        willl attached to PID 1.
+
+LETS UNDERSTAND PID 1
+44  clear
+   45  clear
+   46  docker run jenkins
+   47  clear
+   48  docker ps -a
+   49  docker run -d jenkins
+   50  docker ps
+   51  docker ps -a
+   52  clear
+   53  clear
+   54  docker ps -a
+   55  docker stop 608bde9780ea
+   56  docker rm 608bde9780ea dc400428c337
+   57  clear
+   58  docker ps -a
+   59  w
+   60  cleear
+   61  clear
+   62  ps -eaf | grep docker
+   63  docker run -d jenkins
+   64  ps -eaf | grep docker
+   65  docker run -d jenkins
+   66  ps -eaf | grep docker
+   67  clear
+   68  ls
+   69  clear
+   70  docker ps
+   71  docker exec 49efc8dc2f25 df -kh
+   72  docker exec fe39d949f271 df -kh
+   73  docker exec fe39d949f271 ls /var/jenkins_home
+   74  docker exec 49efc8dc2f25  ls /var/jenkins_home
+   75  clear
+   76  history
+   77  docker exec fe39d949f271 touch /var/jenkins_home/rajesh.txt
+   78  docker exec 49efc8dc2f25  ls /var/jenkins_home
+   79  docker exec fe39d949f271 touch /var/jenkins_home/rajesh.txt
+   80  docker exec fe39d949f271 ls /var/jenkins_home
+   81  clear
+   82  ifconfig
+   83  clear
+   84  docker ps
+   85  docker inspect 49efc8dc2f25
+   86  docker ps
+   87  docker inspect fe39d949f271
+   88  clear
+   89  ps -eaf
+   90  clear
+   91  docker ps
+   92  docker exec 49efc8dc2f25 ps -eaf
+   93  docker exec fe39d949f271 ps -eaf
+   94  history
+
+
+
+
+   How to go inside a container?
+- exec - Docker exec will execute a executables inside a container if EXist
+            with -it and shell - you can go inside a container
+- attach
+        willl attached to PID 1.
+
+How to come out of containers?
+Crtl + p + q
+
+93  docker exec fe39d949f271 ps -eaf
+   94  history
+   95  clear
+   96  docker ps
+   97  docker exec -it 49efc8dc2f25 /bin/bash
+   98  docker exec 49efc8dc2f25 ps -eaf
+   99  docker attach 49efc8dc2f25
+  100  docker ps
+  101  docker ps -a
+  102  clear
+  103  history
+
+  
+
+How to access container?
+        BROWSERS
+
+104  clear
+  105  ls
+  106  clear
+  107  clea
+  108  docker ps
+  109  docker inspect fe39d949f271
+  110  ping 172.17.0.2
+  111  docker ps
+  112  curl http://172.17.0.2:8080
+  113  clear
+  114  docker ps
+  115  docker run -d -p 8085:8080 jenkins
+  116  history
