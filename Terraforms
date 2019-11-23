@@ -1,0 +1,160 @@
+https://www.guru99.com/devops-tutorial.html
+https://github.com/ansible/ansible-examples/blob/master/tomcat-standalone/roles/tomcat/tasks/main.yml
+https://github.com/terraform-providers/terraform-provider-aws/blob/master/examples/elb/main.tf
+https://learn.hashicorp.com/terraform/getting-started/install.html                 -----> How to install terraform
+
+https://www.terraform.io/downloads.html                                         -------> in windows 10 os
+
+https://acloudxpert.com/how-to-install-terraform-on-amazon-linux-ami-ec2/       --> install terraform in aws linux 2 64 bit
+https://www.terraform.io/docs/providers/index.html                              -----> provider names
+https://atom.io/                                                                ------->application
+
+AWS Cli instalation
+---------------------
+
+    1  clear
+    2  yum install terraform
+    3  clear
+    4  sudo yum update
+    5  curl -O https://releases.hashicorp.com/terraform/0.12.13/terraform_0.12.13_linux_amd64.zip
+    6  echo $PATH
+    7  unzip terraform_0.11.1_linux_amd64.zip -d /usr/bin/
+    8  yum install aws cli
+    9  aws
+   10  aws s3 ls
+   11  aws configure
+   12  aws s3 ls
+   13  aws ec2 describe -instances
+   14  aws ec2 help
+   15  aws ec2 -describe-instance
+   16  aws ec2 describe-instance
+   17  aws ec2 describe-instances
+   18  terraform --version
+   19  terraform -v
+   
+519 terrafrom --help
+520 terraform --help
+521 terraform --help plan
+522 terraform --help env
+523 clear
+524 terraform --help plan
+525 pwd
+526 cd …/…
+527 pwd
+528 ls -la
+529 cd terraform/
+530 ls -la
+531 cd test
+532 sl -la
+533 ls -la
+534 pwd
+535 terraform destroy
+536 clear
+537 pwd
+538 ls -la
+539 terraform plan
+540 terraform apply
+541 ls -la
+542 terraform destroy
+543 history
+   
+   ******************************
+   * follow the below procedure *
+   ******************************
+   
+   20  curl -O https://releases.hashicorp.com/terraform/0.12.13/terraform_0.12.13_linux_amd64.zip
+   21  echo $PATH
+   22  unzip terraform_0.12.13_linux_amd64.zip -d  /usr/bin
+   23  terraform --versio
+   24  clear
+   25   terraform -v
+   26  history
+   
+   
+ command ====>   terraform -help
+ *******************************
+ 
+   Common commands:
+    apply              Builds or changes infrastructure
+    console            Interactive console for Terraform interpolations
+    destroy            Destroy Terraform-managed infrastructure
+    env                Workspace management
+    fmt                Rewrites config files to canonical format
+    get                Download and install modules for the configuration
+    graph              Create a visual graph of Terraform resources
+    import             Import existing infrastructure into Terraform
+    init               Initialize a Terraform working directory
+    output             Read an output from a state file
+    plan               Generate and show an execution plan
+    providers          Prints a tree of the providers used in the configuration
+    refresh            Update local state file against real resources
+    show               Inspect Terraform state or plan
+    taint              Manually mark a resource for recreation
+    untaint            Manually unmark a resource as tainted
+    validate           Validates the Terraform files
+    version            Prints the Terraform version
+    workspace          Workspace management
+
+All other commands:
+    0.12upgrade        Rewrites pre-0.12 module source code for v0.12
+    debug              Debug output management (experimental)
+    force-unlock       Manually unlock the terraform state
+    push               Obsolete command for Terraform Enterprise legacy (v1)
+    state              Advanced state management
+
+                              example:- terraform apply
+
+ command ====>   terraform -help plan
+ *******************************
+[root@ip-172-31-17-0 ec2-user]# terraform -help plan
+Usage: terraform plan [options] [DIR]
+
+  Generates an execution plan for Terraform.
+
+  This execution plan can be reviewed prior to running apply to get a
+  sense for what Terraform will do. Optionally, the plan can be saved to
+  a Terraform plan file, and apply can take this plan file to execute
+  this plan exactly.
+
+Options:
+
+  -destroy            If set, a plan will be generated to destroy all resources
+                      managed by the given configuration and state.
+
+  -detailed-exitcode  Return detailed exit codes when the command exits. This
+                      will change the meaning of exit codes to:
+                      0 - Succeeded, diff is empty (no changes)
+                      1 - Errored
+                      2 - Succeeded, there is a diff
+
+  -input=true         Ask for input for variables if not directly set.
+
+  -lock=true          Lock the state file when locking is supported.
+
+  -lock-timeout=0s    Duration to retry a state lock.
+
+  -no-color           If specified, output won't contain any color.
+
+  -out=path           Write a plan file to the given path. This can be used as
+                      input to the "apply" command.
+
+  -parallelism=n      Limit the number of concurrent operations. Defaults to 10.
+
+  -refresh=true       Update state prior to checking for differences.
+
+  -state=statefile    Path to a Terraform state file to use to look
+                      up Terraform-managed resources. By default it will
+                      use the state "terraform.tfstate" if it exists.
+
+  -target=resource    Resource to target. Operation will be limited to this
+                      resource and its dependencies. This flag can be used
+                      multiple times.
+
+  -var 'foo=bar'      Set a variable in the Terraform configuration. This
+                      flag can be set multiple times.
+
+  -var-file=foo       Set variables in the Terraform configuration from
+                      a file. If "terraform.tfvars" or any ".auto.tfvars"
+                      files are present, they will be automatically loaded.
+
+ami id:- your amazone instance name 
