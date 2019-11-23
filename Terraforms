@@ -1,3 +1,6 @@
+9100779644 - harish
+ harishchalla18@gmail.com
+
 https://www.guru99.com/devops-tutorial.html
 https://github.com/ansible/ansible-examples/blob/master/tomcat-standalone/roles/tomcat/tasks/main.yml
 https://github.com/terraform-providers/terraform-provider-aws/blob/master/examples/elb/main.tf
@@ -8,8 +11,13 @@ https://www.terraform.io/downloads.html                                         
 https://acloudxpert.com/how-to-install-terraform-on-amazon-linux-ami-ec2/       --> install terraform in aws linux 2 64 bit
 https://www.terraform.io/docs/providers/index.html                              -----> provider names
 https://atom.io/                                                                ------->application
+https://www.terraform.io/docs/providers/aws/r/security_group.html
+https://mobaxterm.mobatek.net/                                                  -------> insted of putty
+https://www.terraform.io/docs/configuration-0-11/interpolation.html             ------->
+https://www.terraform.io/docs/providers/aws/r/security_group.html               ------->
+https://github.com/terraform-providers/terraform-provider-aws/tree/master/examples/elb         --------> reference notes for terraforms
 
-AWS Cli instalation
+AWS Cli instalation in linux
 ---------------------
 
     1  clear
@@ -158,3 +166,19 @@ Options:
                       files are present, they will be automatically loaded.
 
 ami id:- your amazone instance name 
+
+command ====>   terraform show
+ *******************************
+ 
+ creating aws user
+ ****************
+ --> search for IAM
+ --> click on users
+ ---> click on add user
+ ---> tick Programmatic access ,AWS Management Console access,Custom password ------>click on next and download csv
+ 
+ loging with aws user account
+ username:-sivateja_user
+ pwd:-ur personal pwd
+ 
+ 
